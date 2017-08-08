@@ -1,0 +1,12 @@
+<div class="float-right mr-2 Holiday">
+  <p>
+    Innroad Holiday List
+  </p>
+  <ul class="list-group">
+    <li *ngFor="let holiday of Innroad_holidays" class="list-group-item">
+      <span class="p-2">{{holiday.Name}}</span>
+      <span class="p-2">{{holiday.Date}}</span>
+      <span>{{holiday.Day}}</span>
+    </li>
+  </ul>
+</div>

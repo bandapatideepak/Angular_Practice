@@ -1,0 +1,13 @@
+<p>
+  add-student works!
+</p>
+<div>
+  Student Name: <input type="text" [(ngModel)]="student.Name" placeholder="enter your name" /><br> Description:
+  <textarea rows="4" [(ngModel)]="student.Description" cols="50" placeholder="description"></textarea><br>
+   <input [mdDatepicker]="myDatepicker">
+  <button [mdDatepickerToggle]="myDatepicker"></button>
+  <md-datepicker #myDatepicker></md-datepicker> 
+  <button (click)="SaveDetails()" class="btn btn-primary btn-sm">Save</button>
+
+</div>
+<a href="/student-list" routerLinkActive="active" class="btn btn-success btn-sm">Back to main page </a>
