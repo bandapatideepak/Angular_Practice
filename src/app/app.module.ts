@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'
-import { MaterialModule, MdNativeDateModule } from '@angular/material';
+import { MaterialModule, MdNativeDateModule, MdDialogModule } from '@angular/material';
 import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { ListofstudentsDirective } from './listofstudents.directive';
@@ -36,7 +37,9 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     MaterialModule,
-    MdNativeDateModule
+    MdNativeDateModule,
+    MdDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,6 @@
 .Holiday {
     width: 30%;
     }
-.Holiday ul {
-    cursor: pointer;
-}
 .Holiday ul li{
     background-color: aliceblue;
 }
