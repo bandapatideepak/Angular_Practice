@@ -1,0 +1,17 @@
+.mb-10{
+    margin-bottom: 10px;
+}
+.p-10
+{
+    padding: 10px
+}
+.banner{
+    font-family: serif;
+    vertical-align: middle;
+    text-align: center;
+    background-color: bisque;
+    
+}
+.modalpopup{
+    background-color: beige;
+}

@@ -1,13 +1,31 @@
-<p>
-  add-student works!
-</p>
-<div>
-  Student Name: <input type="text" [(ngModel)]="student.Name" placeholder="enter your name" /><br> Description:
-  <textarea rows="4" [(ngModel)]="student.Description" cols="50" placeholder="description"></textarea><br>
-   <input [mdDatepicker]="myDatepicker">
-  <button [mdDatepickerToggle]="myDatepicker"></button>
-  <md-datepicker #myDatepicker></md-datepicker> 
-  <button (click)="SaveDetails()" class="btn btn-primary btn-sm">Save</button>
-
+<div md-dialog-title class="mb-10 p-10 banner">
+  <h3>
+    Student Entry
+  </h3>
 </div>
-<a href="/student-list" routerLinkActive="active" class="btn btn-success btn-sm">Back to main page </a>
+<div class="modalpopup">
+  <div>
+    <span>   Student Name:</span>
+    <input type="text" [(ngModel)]="student.LeaveType" placeholder="enter your name" />
+  </div>
+  <div>
+    <span> Description:</span>
+    <textarea rows="4" [(ngModel)]="student.Description" cols="50" placeholder="description"></textarea><br>
+  </div>
+  <div>
+    <span> Start Date:</span>
+    <input [mdDatepicker]="StartDate" [(ngModel)]="student.StartDate">
+    <button [mdDatepickerToggle]="StartDate"></button>
+    <md-datepicker #StartDate></md-datepicker>
+  </div>
+  <div>
+    <span> End Date:</span>
+    <input [mdDatepicker]="EndDate" [(ngModel)]="student.EndDate">
+    <button [mdDatepickerToggle]="EndDate"></button>
+    <md-datepicker #EndDate></md-datepicker>
+  </div>
+  <div>
+    <button (click)="SaveDetails()" class="btn btn-primary btn-sm">Save</button>
+    <button md-dialog-close md-btn >Cancel</button>
+  </div>
+</div>

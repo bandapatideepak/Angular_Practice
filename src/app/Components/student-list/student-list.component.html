@@ -14,10 +14,10 @@
     <tr *ngFor="let student of StudentsData">
       <td>{{student.Id}}</td>
       <td>{{student.Description}}</td>
-      <td>{{student.Name}}</td>
+      <td>{{student.Manager}}</td>
       <td><button (click)="DeleteRow(student)" class="btn btn-danger btn-sm">Delete </button></td>
     </tr>
 </table>
-<button  md-button (click)="openDialog()">Add Student</button>
-  <a href="/add-student" routerLinkActive="active">add-student</a>
+<a md-fab mdTooltip="Add Student" routerLink="." (click)="addstudent.openDialog()">
+    <md-icon>add</md-icon></a>
 </div>
