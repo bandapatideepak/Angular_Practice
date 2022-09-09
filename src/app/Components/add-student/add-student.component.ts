@@ -13,7 +13,7 @@ export class AddStudentComponent implements OnInit {
   dialogbox: any;
   SaveDetails() {
     //this.dialogRef.close();
-    console.log(this.student.Description  + 'click event is working fine !!');
+    console.log(this.student.Description  + 'click event is working fine <<<< !!');
   }
   Cancel() {
   }
